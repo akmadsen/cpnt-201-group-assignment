@@ -1,0 +1,19 @@
+{
+  "name": "cpnt-201-group-assignment",
+  "version": "1.0.0",
+  "description": "Group Assignment for CPNT 201 (SASS) at SAIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akmadsen/cpnt-201-group-assignment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akmadsen/cpnt-201-group-assignment/issues"
+  },
+  "homepage": "https://github.com/akmadsen/cpnt-201-group-assignment#readme"
+}
