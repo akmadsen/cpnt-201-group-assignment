@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/akmadsen/cpnt-201-group-assignment/issues"
   },
-  "homepage": "https://github.com/akmadsen/cpnt-201-group-assignment#readme"
+  "homepage": "https://github.com/akmadsen/cpnt-201-group-assignment#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
