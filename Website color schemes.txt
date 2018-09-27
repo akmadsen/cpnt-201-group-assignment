@@ -1,0 +1,27 @@
+
+Primary color 1 : #0c1f31
+
+Secondary : #ac9766
+-----------------------------------------
+
+Header background color : #0c1f31
+
+header text link color :  white
+
+links (active state) : #ac9766
+
+Logo color (optional): #ac9766
+
+body background color : white
+
+headline color : #0c1f31 
+
+body text color : #656b70
+
+Footer background : #0c1f31
+
+footer text : #ac9766
+
+
+
+
