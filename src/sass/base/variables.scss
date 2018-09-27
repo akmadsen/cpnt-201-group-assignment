@@ -1,6 +1,15 @@
-$primary-color : #0c1f31;
-$secondary-color: #ac9766;
-$third-color: #fff;
+// ----------------------------
+// Color Palette 
+// ----------------------------
+
+$primary-color      : #0c1f31;
+$secondary-color    : #ac9766;
+$accent-color       : #fff;
+$body-text-color    : #656b70;
+
+// ----------------------------
+// Measurements 
+// ----------------------------
 
 $header-height: 80px; 
 $hero-height: 3 * $header-height; 

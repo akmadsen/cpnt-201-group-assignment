@@ -26,7 +26,7 @@ body background color : white
 
 headline color : $primary-color 
 
-body text color : #656b70
+body text color : $body-text-color 
 
 
 // FOOTER COLORS 
