@@ -11,12 +11,20 @@ footer {
         justify-content: flex-end;
     }
 
-    i {
+    a {
+        color: $accent-color; 
+
         display: inline-block; 
+        
         margin-right:20px;
+        
         transition-duration: $hover-trans-time;
+        
         &:hover{
-            color:$hovercolor-headfoot; 
+            color: $hovercolor-headfoot; 
+            
+            text-decoration: none; 
+            
             transform: rotate(10deg);
         }
     }
