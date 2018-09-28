@@ -3,12 +3,22 @@
 //  Member Cards 
 // -------------------
 
+.card-container { 
+    padding-top: $standard-margin; 
+}
+
 .member-card { 
-    background-color: red; 
+    display: flex; 
+    align-items: center; 
+    width: 100%; 
+    margin-bottom: $standard-margin; 
+
 }
 
 .profile-pic { 
-    height: 300px; 
-    width: 300px; 
+    height: $profile-pic-size; 
+    width: $profile-pic-size; 
     background-color: rebeccapurple; 
+    margin-right: $standard-margin; 
 }
+

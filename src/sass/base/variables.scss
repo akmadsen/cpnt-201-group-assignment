@@ -7,9 +7,13 @@ $secondary-color    : #ac9766;
 $accent-color       : #fff;
 $body-text-color    : #656b70;
 
+
 // ----------------------------
 // Measurements 
 // ----------------------------
 
-$header-height: 80px; 
-$hero-height: 3 * $header-height; 
+$header-height      : 50px; 
+$hero-height        : 3 * $header-height; 
+$standard-margin    : $header-height / 2; 
+
+$profile-pic-size: 125px; 
