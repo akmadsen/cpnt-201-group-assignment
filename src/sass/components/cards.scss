@@ -5,16 +5,26 @@
 
 .card-container { 
     padding-top: $standard-margin; 
+    display: flex; 
+    flex-direction: column; 
+
+    @media (max-width: $medium-devices) {
+        flex-direction: row; 
+        justify-content: space-between; 
+    }
 }
+
 
 .member-card { 
     display: flex; 
     align-items: center; 
+
     width: 100%; 
     margin-bottom: $standard-margin; 
 
     @media (max-width: $medium-devices) {
          flex-direction: column; 
+         width: $mobile-card-size; 
     }
 }
 
@@ -25,7 +35,7 @@
     margin-right: $standard-margin; 
 
     @media (max-width: $medium-devices) {
-        height: $mobile-card-size;
+        height: (2 / 3) * $mobile-card-size;
         width: $mobile-card-size; 
     }
 }
