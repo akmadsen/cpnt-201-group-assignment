@@ -1,5 +1,10 @@
-@import './variables.scss';
 
-@import './components/header.scss';
+// Variables 
+@import './base/variables.scss'; 
+
+
+// Components
+@import './components/header.scss'; 
 @import './components/footer.scss';
+
 
