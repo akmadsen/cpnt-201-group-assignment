@@ -6,7 +6,13 @@ header{
     display: flex;
     align-items: center;
     
+    .container { 
+        display: flex;
+        align-items: center; 
+    }
     
+    
+
     .header-logo{
         padding-left:25px;
         margin-right:auto;

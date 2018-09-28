@@ -5,6 +5,9 @@ header {
   color: #fff;
   display: flex;
   align-items: center; }
+  header .container {
+    display: flex;
+    align-items: center; }
   header .header-logo {
     padding-left: 25px;
     margin-right: auto;
