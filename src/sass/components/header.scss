@@ -2,7 +2,7 @@ header{
     width:100%;
     height:50px;
     background:$primary-color;
-    color:$third-color;
+    color:$accent-color;
     display: flex;
     align-items: center;
     
@@ -14,13 +14,14 @@ header{
     .header-logo{
         padding-left:25px;
         margin-right:auto;
-        color:$third-color;
+        color:$accent-color;
         
         i{
-            color:$third-color;
+            color:$accent-color;
         }
     }
         
+    
     .header-link {
         height:100%;
         
@@ -29,7 +30,7 @@ header{
         a{
             height:100%;
             text-decoration: none;
-            color:$third-color;
+            color:$accent-color;
             
             &:hover{
                 background:#817f7f;
