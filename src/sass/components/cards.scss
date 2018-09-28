@@ -1,17 +1,30 @@
-
 // -------------------
-//  Member Cards 
+// Shared Aspects 
 // -------------------
 
-.card-container { 
-    padding-top: $standard-margin; 
+// Card Containers 
+
+%card-container { 
+    padding: $standard-margin 0; 
     display: flex; 
     flex-direction: column; 
+}
+
+.blog-card-container { 
+    @extend %card-container; 
+
+    @media (max-width: $small-devices) {
+        align-items: center; 
+        justify-content: flex-start; 
+    }
+}
+
+.about-card-container { 
+    @extend %card-container; 
 
     @media (max-width: $medium-devices) {
         flex-direction: row; 
-        justify-content: space-between;
-
+        justify-content: space-between; 
     }
 
     @media (max-width: $small-devices) {
@@ -21,46 +34,20 @@
     }
 }
 
-
-.member-card { 
+// Cards 
+%card-base { 
     display: flex; 
     align-items: center; 
 
     width: 100%; 
     margin-bottom: $standard-margin; 
 
-    @media (max-width: $medium-devices) {
-        flex-direction: column; 
-        align-items: center; 
-        width: $medium-card-size; 
-    }
-
-    @media (max-width: $small-devices) { 
-        width: $small-card-size; 
+    &:last-child { 
+        margin-bottom: 0; 
     }
 }
 
-.profile-pic { 
-    height: $profile-pic-size; 
-    width: $profile-pic-size; 
-    background-color: $profile-color; 
-    margin-right: $standard-margin; 
-    flex-basis: $profile-pic-size; 
-
-    @media (max-width: $medium-devices) {
-        height: (2 / 3) * $medium-card-size;
-        width: 100%; 
-        margin-right: 0; 
-    }
-
-    @media (max-width: $small-devices) {
-        height: (2 / 3) * $small-card-size;
-        width: 100%;
-        margin-right: 0; 
-    }
-}
-
-.member-info { 
+%card-text-base { 
     h2 { 
         margin-bottom: 0; 
     }
@@ -76,10 +63,66 @@
 
     @media (max-width: $medium-devices) { 
         h2 { 
-            font-size: 1.6em; 
-            margin-bottom: $standard-margin / 5; 
+            font-size: 1.4em; 
+            margin-bottom: 0; 
         }
     }
+}
+
+// -------------------
+// Blog Cards 
+// -------------------
+
+.blog-card { 
+    @extend %card-base;
+
+    @media (max-width: $small-devices) { 
+        flex-direction: column; 
+        align-items: center;
+        width: $small-card-size; 
+    }
+}
+
+.blog-image { 
+    @include standin-image($blog-color, $blog-pic-size); 
+
+    @include standin-image-query($small-devices, (2 / 3) * $small-card-size, 100%);
+}
+
+.blog-text { 
+    @extend %card-text-base; 
+}
+
+// -------------------
+//  Member Cards 
+// -------------------
+
+.member-card { 
+    @extend %card-base; 
+
+    @media (max-width: $medium-devices) {
+        flex-direction: column; 
+        align-items: center; 
+        width: $medium-card-size; 
+        
+        margin-right: $standard-margin / 2; 
+    }
+
+    @media (max-width: $small-devices) { 
+        width: $small-card-size; 
+    }
+}
+
+
+.profile-pic { 
+    @include standin-image($profile-color, $profile-pic-size); 
+
+    @include standin-image-query($medium-devices, (2 / 3) * $medium-card-size, 100%);
+    @include standin-image-query($small-devices, (2 / 3) * $small-card-size, 100%);
+}
+
+.member-info { 
+    @extend %card-text-base; 
 }
 
 
