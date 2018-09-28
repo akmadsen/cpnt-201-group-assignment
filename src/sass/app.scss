@@ -1,9 +1,14 @@
-// Variables
-@import 'variables.scss'; 
+// Variables 
+@import './base/variables.scss';  
 
-// Base 
+// Common Styles
+@import './base/general.scss'; 
 
-// Components 
+// Component Styles 
+@import './components/hero.scss'; 
+@import './components/cards.scss'; 
+@import './components/header.scss'; 
+@import './components/footer.scss';
 
-// Pages 
+// Page Specific Styles 
 @import './pages/blogname.scss'; 
