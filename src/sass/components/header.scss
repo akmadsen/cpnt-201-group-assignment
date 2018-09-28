@@ -1,0 +1,42 @@
+header{
+    width:100%;
+    height:50px;
+    background:$primary-color;
+    color:$third-color;
+    display: flex;
+    align-items: center;
+    
+    .container { 
+        display: flex;
+        align-items: center; 
+    }
+    
+    
+
+    .header-logo{
+        padding-left:25px;
+        margin-right:auto;
+        color:$third-color;
+        
+        i{
+            color:$third-color;
+        }
+    }
+        
+    .header-link {
+        height:100%;
+        
+        padding-right:50px;
+        
+        a{
+            height:100%;
+            text-decoration: none;
+            color:$third-color;
+        }
+        
+        a:hover{
+        background:#817f7f;
+        }
+    }
+}
+
