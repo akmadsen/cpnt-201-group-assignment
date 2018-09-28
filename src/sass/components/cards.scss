@@ -1,10 +1,9 @@
-
 // -------------------
-//  Member Cards 
+// Shared Aspects 
 // -------------------
 
 .card-container { 
-    padding-top: $standard-margin; 
+    padding: $standard-margin 0; 
     display: flex; 
     flex-direction: column; 
 
@@ -21,26 +20,7 @@
     }
 }
 
-
-.member-card { 
-    display: flex; 
-    align-items: center; 
-
-    width: 100%; 
-    margin-bottom: $standard-margin; 
-
-    @media (max-width: $medium-devices) {
-        flex-direction: column; 
-        align-items: center; 
-        width: $medium-card-size; 
-    }
-
-    @media (max-width: $small-devices) { 
-        width: $small-card-size; 
-    }
-}
-
-.profile-pic { 
+%standin-image { 
     height: $profile-pic-size; 
     width: $profile-pic-size; 
     background-color: $profile-color; 
@@ -60,7 +40,25 @@
     }
 }
 
-.member-info { 
+%card-base { 
+    display: flex; 
+    align-items: center; 
+
+    width: 100%; 
+    margin-bottom: $standard-margin; 
+
+    @media (max-width: $medium-devices) {
+        flex-direction: column; 
+        align-items: center; 
+        width: $medium-card-size; 
+    }
+
+    @media (max-width: $small-devices) { 
+        width: $small-card-size; 
+    }
+}
+
+%card-text-base { 
     h2 { 
         margin-bottom: 0; 
     }
@@ -80,6 +78,38 @@
             margin-bottom: $standard-margin / 5; 
         }
     }
+}
+
+// -------------------
+// Blog Cards 
+// -------------------
+
+.blog-card { 
+    @extend %card-base;
+}
+
+.blog-image { 
+    @extend %standin-image; 
+}
+
+.blog-text { 
+    @extend %card-text-base; 
+}
+
+// -------------------
+//  Member Cards 
+// -------------------
+
+.member-card { 
+    @extend %card-base; 
+}
+
+.profile-pic { 
+    @extend %standin-image; 
+}
+
+.member-info { 
+    @extend %card-text-base; 
 }
 
 
