@@ -12,6 +12,22 @@
     align-items: center; 
     width: 100%; 
     margin-bottom: $standard-margin; 
+
+    @media (max-width: $medium-devices) {
+         flex-direction: column; 
+    }
+}
+
+.profile-pic { 
+    height: $profile-pic-size; 
+    width: $profile-pic-size; 
+    background-color: $profile-color; 
+    margin-right: $standard-margin; 
+
+    @media (max-width: $medium-devices) {
+        height: $mobile-card-size;
+        width: $mobile-card-size; 
+    }
 }
 
 .member-info { 
@@ -25,10 +41,4 @@
     }
 }
 
-.profile-pic { 
-    height: $profile-pic-size; 
-    width: $profile-pic-size; 
-    background-color: rebeccapurple; 
-    margin-right: $standard-margin; 
-}
 
