@@ -14,5 +14,10 @@ footer {
     i {
         display: inline-block; 
         margin-right:20px;
+        transition-duration: $hover-trans-time;
+        &:hover{
+            color:$hovercolor-headfoot; 
+            transform: rotate(10deg);
+        }
     }
 }
