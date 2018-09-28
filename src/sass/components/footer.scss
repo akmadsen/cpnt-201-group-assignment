@@ -14,5 +14,10 @@ footer {
     i {
         display: inline-block; 
         margin-right:20px;
+        transition-duration: 1s;
+        &:hover{
+            background:rgb(238, 42, 42);
+            transform: rotate(10deg);
+        }
     }
 }
