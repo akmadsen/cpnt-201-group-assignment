@@ -77,12 +77,14 @@
     @extend %card-base;
 
     @media (max-width: $small-devices) { 
+        flex-direction: column; 
+        align-items: center;
         width: $small-card-size; 
     }
 }
 
 .blog-image { 
-    @include standin-image($blog-color, $blog-pic-size, $medium-card-size, $small-card-size); 
+    @include standin-image($blog-color, $blog-pic-size); 
 
     @include standin-image-query($small-devices, (2 / 3) * $small-card-size, 100%);
 }
@@ -111,10 +113,10 @@
     }
 }
 
-.profile-pic { 
-    @include standin-image($profile-color, $profile-pic-size, $medium-card-size, $small-card-size); 
 
-    
+.profile-pic { 
+    @include standin-image($profile-color, $profile-pic-size); 
+
     @include standin-image-query($medium-devices, (2 / 3) * $medium-card-size, 100%);
     @include standin-image-query($small-devices, (2 / 3) * $small-card-size, 100%);
 }

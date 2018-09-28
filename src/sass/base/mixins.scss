@@ -2,7 +2,7 @@
 //  Card Mixins 
 // ----------------------------------
 
-@mixin standin-image($color, $base-size, $medium-size, $small-size) { 
+@mixin standin-image($color, $base-size) { 
     height: $base-size; 
     width: $base-size; 
     background-color: $color; 
