@@ -1,8 +1,20 @@
 body { 
     background-color: white; 
     color: $body-text-color; 
+
+    min-height:100vh;
+
+    display: flex; 
+    flex-direction: column; 
 }
 
 h1 { 
     color: $primary-color; 
+}
+
+main{
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: auto;
 }
