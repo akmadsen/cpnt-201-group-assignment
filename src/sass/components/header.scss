@@ -18,10 +18,15 @@ header{
         
         i{
             color:$accent-color;
+            transition:0.5s;
+
+            &:hover{
+                background:$hovercolor-headfoot;
+                transform:scale(1.2,1.2);
+            }
         }
     }
         
-    
     .header-link {
         height:100%;
         

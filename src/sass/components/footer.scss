@@ -16,7 +16,7 @@ footer {
         margin-right:20px;
         transition-duration: 1s;
         &:hover{
-            background:rgb(238, 42, 42);
+            background:$hovercolor-headfoot; 
             transform: rotate(10deg);
         }
     }
