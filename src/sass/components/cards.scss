@@ -1,0 +1,85 @@
+
+// -------------------
+//  Member Cards 
+// -------------------
+
+.card-container { 
+    padding-top: $standard-margin; 
+    display: flex; 
+    flex-direction: column; 
+
+    @media (max-width: $medium-devices) {
+        flex-direction: row; 
+        justify-content: space-between;
+
+    }
+
+    @media (max-width: $small-devices) {
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: flex-start; 
+    }
+}
+
+
+.member-card { 
+    display: flex; 
+    align-items: center; 
+
+    width: 100%; 
+    margin-bottom: $standard-margin; 
+
+    @media (max-width: $medium-devices) {
+        flex-direction: column; 
+        align-items: center; 
+        width: $medium-card-size; 
+    }
+
+    @media (max-width: $small-devices) { 
+        width: $small-card-size; 
+    }
+}
+
+.profile-pic { 
+    height: $profile-pic-size; 
+    width: $profile-pic-size; 
+    background-color: $profile-color; 
+    margin-right: $standard-margin; 
+    flex-basis: $profile-pic-size; 
+
+    @media (max-width: $medium-devices) {
+        height: (2 / 3) * $medium-card-size;
+        width: 100%; 
+        margin-right: 0; 
+    }
+
+    @media (max-width: $small-devices) {
+        height: (2 / 3) * $small-card-size;
+        width: 100%;
+        margin-right: 0; 
+    }
+}
+
+.member-info { 
+    h2 { 
+        margin-bottom: 0; 
+    }
+
+    span { 
+        display: block; 
+        margin-bottom: $standard-margin / 2; 
+    }
+
+    p { 
+        text-align: justify; 
+    }
+
+    @media (max-width: $medium-devices) { 
+        h2 { 
+            font-size: 1.6em; 
+            margin-bottom: $standard-margin / 5; 
+        }
+    }
+}
+
+

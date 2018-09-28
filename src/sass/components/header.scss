@@ -1,0 +1,41 @@
+header{
+    width:100%;
+    height:50px;
+    background:$primary-color;
+    color:$accent-color;
+    display: flex;
+    align-items: center;
+    
+    .container { 
+        display: flex;
+        align-items: center; 
+    }
+    
+    .header-logo{
+        padding-left:25px;
+        margin-right:auto;
+        color:$accent-color;
+        
+        i{
+            color:$accent-color;
+        }
+    }
+        
+    
+    .header-link {
+        height:100%;
+        
+        padding-right:50px;
+        
+        a{
+            height:100%;
+            text-decoration: none;
+            color:$accent-color;
+            
+            &:hover{
+                background:#817f7f;
+            }
+        }
+    }
+}
+

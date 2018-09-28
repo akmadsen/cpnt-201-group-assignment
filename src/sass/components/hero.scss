@@ -1,0 +1,10 @@
+.hero { 
+    height: $hero-height;
+    background-color: $secondary-color; 
+
+    .container { 
+        height: 100%;
+        display: flex; 
+        align-items: center; 
+    }
+}

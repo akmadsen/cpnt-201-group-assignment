@@ -1,0 +1,34 @@
+// ----------------------------
+// Color Palette 
+// ----------------------------
+
+$primary-color      : #0c1f31;
+$secondary-color    : #ac9766;
+$accent-color       : #fff;
+$body-text-color    : #656b70;
+
+
+// ----------------------------
+// Other Colours 
+// ----------------------------
+
+$profile-color: rebeccapurple; 
+
+// ----------------------------
+// Measurements 
+// ----------------------------
+
+// Bootstrap Measurements
+$small-devices: 576px; 
+$medium-devices: 768px; 
+$large-devices: 992px; 
+$extra-large-devices: 1200px; 
+
+// Custom Measurements
+$header-height      : 50px; 
+$hero-height        : 3.5 * $header-height; 
+$standard-margin    : $header-height / 2; 
+
+$profile-pic-size: 125px; 
+$medium-card-size: 30%; 
+$small-card-size: 300px; 
