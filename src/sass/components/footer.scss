@@ -14,9 +14,9 @@ footer {
     i {
         display: inline-block; 
         margin-right:20px;
-        transition-duration: 1s;
+        transition-duration: $hover-trans-time;
         &:hover{
-            background:$hovercolor-headfoot; 
+            color:$hovercolor-headfoot; 
             transform: rotate(10deg);
         }
     }

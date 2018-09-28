@@ -18,15 +18,14 @@ header{
         
         i{
             color:$accent-color;
-            transition:0.5s;
+            transition: $hover-trans-time;
 
             &:hover{
-                background:$hovercolor-headfoot;
-                transform:scale(1.2,1.2);
+                color: $hovercolor-headfoot;
+                transform: scale($company-logo-scale);
             }
         }
-    }
-        
+    }    
     .header-link {
         height:100%;
         
