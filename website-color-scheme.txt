@@ -1,0 +1,36 @@
+//================
+// COLOR PALETTE 
+//================
+
+$primary-color: #0c1f31; 
+$secondary-color: #ac9766;
+$accent-color: #fff; 
+$body-text-color: #656b70;
+// -----------------------------------------
+
+
+// HEADER COLORS 
+
+Header background color : $primary-color
+
+header text link color :  white
+
+links (active state) : $secondary-color
+
+Logo color (optional): $secondary-color
+
+
+// BODY COLORS 
+
+body background color : white
+
+headline color : $primary-color 
+
+body text color : $body-text-color 
+
+
+// FOOTER COLORS 
+
+Footer background : $primary-color
+
+footer text : $secondary-color
