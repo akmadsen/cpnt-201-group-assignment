@@ -45,16 +45,17 @@
     width: $profile-pic-size; 
     background-color: $profile-color; 
     margin-right: $standard-margin; 
+    flex-basis: $profile-pic-size; 
 
     @media (max-width: $medium-devices) {
         height: (2 / 3) * $medium-card-size;
-        width: $medium-card-size; 
+        width: 100%; 
         margin-right: 0; 
     }
 
     @media (max-width: $small-devices) {
         height: (2 / 3) * $small-card-size;
-        width: $small-card-size; 
+        width: 100%;
         margin-right: 0; 
     }
 }
