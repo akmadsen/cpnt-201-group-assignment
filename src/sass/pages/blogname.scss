@@ -1,16 +1,19 @@
-
-
-
 body {
     background: #fff;
 }
 .hero {
     height: 300px;
-    width: 100%;
+    // width: 100%;
     background-size: cover;
     background-position: 50%, 50%;
     background-repeat: no-repeat;
     background: $secondary-color;
+    padding: 80px;
+    
+}
+
+.hero h2 {
+    font-size: 3.5em;
 }
 
 header {
@@ -20,11 +23,10 @@ header {
 }
 
 main {
-    width : 80%;
+    width : 90%;
     margin: auto;
     text-align: left;
-    // background: grey;
-    padding : 50px 10px 50px 170px;
+    padding : 50px 0px;
     
 }
 
