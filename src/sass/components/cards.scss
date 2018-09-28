@@ -26,6 +26,7 @@
     background-color: $profile-color; 
     margin-right: $standard-margin; 
     flex-basis: $profile-pic-size; 
+    flex-shrink: 0; 
 
     @media (max-width: $medium-devices) {
         height: (2 / 3) * $medium-card-size;
