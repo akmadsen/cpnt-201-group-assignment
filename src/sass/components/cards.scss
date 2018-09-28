@@ -12,7 +12,17 @@
     align-items: center; 
     width: 100%; 
     margin-bottom: $standard-margin; 
+}
 
+.member-info { 
+    h2 { 
+        margin-bottom: 0; 
+    }
+
+    span { 
+        display: block; 
+        margin-bottom: $standard-margin / 2; 
+    }
 }
 
 .profile-pic { 
