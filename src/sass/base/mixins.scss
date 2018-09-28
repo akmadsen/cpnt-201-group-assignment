@@ -1,0 +1,19 @@
+// ----------------------------------
+//  Card Mixins 
+// ----------------------------------
+
+@mixin standin-image($color, $base-size) { 
+    height: $base-size; 
+    width: $base-size; 
+    background-color: $color; 
+    margin-right: $standard-margin; 
+    flex-shrink: 0; 
+}
+
+@mixin standin-image-query($threshold-size, $height, $width) { 
+    @media (max-width: $threshold-size) {  
+        height: $height;
+        width: $width; 
+        margin-right: 0; 
+    }
+}

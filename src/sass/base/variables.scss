@@ -13,6 +13,15 @@ $body-text-color    : #656b70;
 // ----------------------------
 
 $profile-color: rebeccapurple; 
+$blog-color: orangered; 
+$hovercolor-headfoot: #ee2a2a;
+
+// ----------------------------
+// Aniamtion Controls 
+// ----------------------------
+$hover-trans-time: 0.2s; 
+$company-logo-scale: 1.2; 
+
 
 // ----------------------------
 // Measurements 
@@ -30,5 +39,6 @@ $hero-height        : 3.5 * $header-height;
 $standard-margin    : $header-height / 2; 
 
 $profile-pic-size: 125px; 
-$medium-card-size: 30%; 
+$blog-pic-size: 150px; 
+$medium-card-size: 200px; 
 $small-card-size: 300px; 
