@@ -1,7 +1,11 @@
 %card-container { 
     padding: $standard-margin 0; 
+
+    min-height: 800px;
+
     display: flex; 
     flex-direction: column; 
+    justify-content: center; 
 }
 
 .blog-card-container { 
@@ -19,6 +23,7 @@
     @media (max-width: $medium-devices) {
         flex-direction: row; 
         justify-content: space-between; 
+        align-items: center; 
     }
 
     @media (max-width: $small-devices) {
