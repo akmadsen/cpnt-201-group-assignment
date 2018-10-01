@@ -11,6 +11,11 @@
     width: 100%; 
     margin-bottom: $standard-margin; 
     
+    h2 {
+        font-family: $header-font; 
+        font-weight: bold;
+    }
+
     &:last-child { 
         margin-bottom: 0; 
     }
@@ -46,6 +51,8 @@
 .blog-card { 
     @extend %card-base;
     
+
+
     @media (max-width: $small-devices) { 
         flex-direction: column; 
         align-items: center;
