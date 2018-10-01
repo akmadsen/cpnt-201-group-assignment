@@ -16,6 +16,10 @@
         font-weight: bold;
     }
 
+    span, p { 
+        font-family: $paragraph-font; 
+    }
+
     &:last-child { 
         margin-bottom: 0; 
     }
