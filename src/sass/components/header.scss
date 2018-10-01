@@ -1,6 +1,6 @@
 header{
     width:100%;
-    height:50px;
+    height: $header-height;
     background:$primary-color;
     color:$accent-color;
     display: flex;
@@ -23,6 +23,8 @@ header{
         height: 100%;
 
         color: $accent-color; 
+
+        transition: $hover-trans-time; 
 
         &:hover{
             color: $link-hover-color;

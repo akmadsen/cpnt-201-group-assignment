@@ -34,11 +34,18 @@ $large-devices: 992px;
 $extra-large-devices: 1200px; 
 
 // Custom Measurements
-$header-height      : 50px; 
-$hero-height        : 4 * $header-height; 
-$standard-margin    : $header-height / 2; 
+$header-height      : 60px; 
+$hero-height        : 500px; 
+$standard-margin    : 20px; 
 
 $profile-pic-size: 125px; 
 $blog-pic-size: 150px; 
 $medium-card-size: 200px; 
 $small-card-size: 300px; 
+
+// Image URLS 
+
+// Hero Images 
+$index-hero-url: "../assets/hero-images/rawpixel-659501-unsplash.jpg"; 
+$blog-hero-url: "../assets/hero-images/markus-spiske-221494-unsplash.jpg"; 
+$about-hero-url: "../assets/hero-images/domenico-loia-272251-unsplash.jpg"; 
