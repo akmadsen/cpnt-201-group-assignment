@@ -13,13 +13,21 @@ $body-text-color    : #656b70;
 
 $link-hover-color: rgb(219, 154, 55); 
 
-$profile-color: rebeccapurple; 
-$blog-color: orangered; 
+$profile-color      : rebeccapurple; 
+$blog-color         : orangered; 
 $hovercolor-headfoot: #ee2a2a;
 
 // ----------------------------
-// Aniamtion Controls 
+// Fonts
 // ----------------------------
+
+$header-font: 'Philosopher', sans-serif;
+$paragraph-font: 'Muli', sans-serif;
+
+// ----------------------------
+// Animation Controls 
+// ----------------------------
+
 $hover-trans-time: 0.2s; 
 $company-logo-scale: 1.2; 
 
