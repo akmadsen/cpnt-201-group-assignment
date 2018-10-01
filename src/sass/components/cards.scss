@@ -87,6 +87,11 @@
     @include standin-image($blog-color, $blog-pic-size); 
 
     @include standin-image-query($small-devices, (2 / 3) * $small-card-size, 100%);
+
+    img {
+        height:100%;
+        width:100%;
+    }    
 }
 
 .blog-text { 
@@ -119,10 +124,14 @@
 
     @include standin-image-query($medium-devices, (2 / 3) * $medium-card-size, 100%);
     @include standin-image-query($small-devices, (2 / 3) * $small-card-size, 100%);
+    
+    img {
+        height:100%;
+        width:100%;
+    }
 }
 
 .member-info { 
     @extend %card-text-base; 
 }
-
 
