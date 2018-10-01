@@ -8,7 +8,7 @@ gulp.task('style', function() {
     gulp.src('./src/sass/app.scss')
         .pipe(wait(500))
         .pipe(sass())
-        .pipe(gulp.dest('./public/css'));
+        .pipe(gulp.dest('./css'));
 }); 
 
 gulp.task('watch', function() {
