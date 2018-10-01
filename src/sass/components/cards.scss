@@ -64,10 +64,34 @@
     }
 }
 
-.blog-image { 
+.blog-image-1 { 
     @include standin-image($blog-color, $blog-pic-size); 
 
     @include standin-image-query($small-devices, (2 / 3) * $small-card-size, 100%);
+    
+    background-image: url($indexcard-1);
+    background-size: cover;
+    background-position:20% 20%;
+}
+
+.blog-image-2 { 
+    @include standin-image($blog-color, $blog-pic-size); 
+
+    @include standin-image-query($small-devices, (2 / 3) * $small-card-size, 100%);
+    
+    background-image: url($indexcard-2);
+    background-size: cover;
+    background-position:20% 20%;
+}
+
+.blog-image-3 { 
+    @include standin-image($blog-color, $blog-pic-size); 
+
+    @include standin-image-query($small-devices, (2 / 3) * $small-card-size, 100%);
+    
+    background-image: url($indexcard-3);
+    background-size: cover;
+    background-position:20% 50%;
 }
 
 .blog-text { 
@@ -101,15 +125,39 @@
 }
 
 
-.profile-pic { 
+.profile-pic-1 { 
     @include standin-image($profile-color, $profile-pic-size); 
 
     @include standin-image-query($medium-devices, (2 / 3) * $medium-card-size, 100%);
     @include standin-image-query($small-devices, (2 / 3) * $small-card-size, 100%);
+
+    background-image: url($aboutcard-1);
+    background-size: cover;
+    background-position:20% 40%;
+}
+
+.profile-pic-2 { 
+    @include standin-image($profile-color, $profile-pic-size); 
+
+    @include standin-image-query($medium-devices, (2 / 3) * $medium-card-size, 100%);
+    @include standin-image-query($small-devices, (2 / 3) * $small-card-size, 100%);
+    
+    background-image: url($aboutcard-2);
+    background-size: cover;
+    background-position:20% 40%;
+}
+
+.profile-pic-3 { 
+    @include standin-image($profile-color, $profile-pic-size); 
+
+    @include standin-image-query($medium-devices, (2 / 3) * $medium-card-size, 100%);
+    @include standin-image-query($small-devices, (2 / 3) * $small-card-size, 100%);
+    
+    background-image: url($aboutcard-3);
+    background-size: cover;
+    background-position:20% 40%;
 }
 
 .member-info { 
     @extend %card-text-base; 
 }
-
-
