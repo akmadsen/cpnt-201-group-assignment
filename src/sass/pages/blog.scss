@@ -1,20 +1,45 @@
-.blog-page-hero-content { 
-    h1 { 
-        margin: 0; 
-    }
-
-    a { 
-        display: inline-block; 
-        margin-bottom: $standard-margin / 2; 
-    }
-}
-
 .blog {  
+
+    .hero { 
+        @include hero-img($blog-hero-url); 
+    }
     
     p { 
         font-size: 16px;
         line-height: 1.5;   
 
         text-align: justify; 
+    }
+    
+    .blog-page-hero-content { 
+        
+        h1 { 
+            margin: 0; 
+            color: white; 
+        }
+        
+        span { 
+            color: white; 
+        }
+
+        a { 
+            background: $primary-color;
+            color: $accent-color; 
+
+            display: inline-block;  
+            font-size: 1.2em;
+
+            padding: $standard-margin / 2 $standard-margin; 
+            border-radius: $standard-margin; 
+
+            margin-bottom: $standard-margin / 2; 
+
+            transition: $hover-trans-time; 
+
+            &:hover { 
+                color: $secondary-color; 
+                text-decoration: none; 
+            }
+        }
     }
 }
