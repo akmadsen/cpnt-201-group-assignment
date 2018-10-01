@@ -32,13 +32,15 @@ header{
     }
 
     .header-logo{
-        padding-left:25px;
-        margin-right:auto;
-        color:$accent-color;
+        padding-left: 0;
+        margin-right: auto;
+        color: $accent-color;
         
+        height: 100%;
+
         a {
             transition: $hover-trans-time;
-
+            padding: 0; 
             &:hover{
                 color: $hovercolor-headfoot;
                 background-color: transparent; 
