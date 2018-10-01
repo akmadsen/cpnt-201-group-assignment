@@ -10,7 +10,7 @@
 
     width: 100%; 
     margin-bottom: $standard-margin; 
-
+    
     &:last-child { 
         margin-bottom: 0; 
     }
@@ -45,7 +45,7 @@
 
 .blog-card { 
     @extend %card-base;
-
+    
     @media (max-width: $small-devices) { 
         flex-direction: column; 
         align-items: center;
@@ -76,6 +76,11 @@
         width: $medium-card-size; 
         
         margin-right: $standard-margin / 2; 
+        margin-bottom: 0; 
+
+        &:last-child { 
+            margin-right: 0; 
+        }
     }
 
     @media (max-width: $small-devices) { 

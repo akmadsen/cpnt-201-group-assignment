@@ -1,9 +1,18 @@
 main{
+    min-height: 800px; 
+
     display:flex;
     flex-direction: column;
     align-items: center;
     
-    padding: $standard-margin $standard-margin / 2; 
-    
-    margin-bottom: auto;
+    margin: 0; 
+
+    .container {
+        padding: $standard-margin; 
+        min-height: 800px; 
+
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+    }
  }
