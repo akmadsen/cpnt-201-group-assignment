@@ -6,4 +6,24 @@
             color: white; 
         }
     }
+
+    main {
+        a { 
+            margin-bottom: $standard-margin; 
+            color: $body-text-color; 
+
+            &:last-child { 
+                margin-bottom: 0; 
+            }
+
+            &:hover { 
+                text-decoration: none; 
+                color: $body-text-color; 
+
+                h2 { 
+                    color: $secondary-color; 
+                }
+            }
+        }
+    }
 }
