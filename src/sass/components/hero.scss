@@ -3,9 +3,14 @@
     background-color: $secondary-color; 
 
     h1 { 
+        font-size: 4.5em; 
         font-family: $header-font; 
         font-weight: bold; 
         letter-spacing: 1px; 
+    }
+
+    h2 { 
+        font-size: 3.5em; 
     }
 
     .container { 
