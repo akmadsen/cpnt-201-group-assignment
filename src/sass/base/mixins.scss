@@ -25,3 +25,9 @@
     background-size: cover; 
     background-position: center; 
 }
+
+@mixin generate-card-bg($img-url, $x-pos, $y-pos) { 
+    background-image: url($img-url);
+    background-size: cover;
+    background-position:$x-pos $y-pos;
+}
