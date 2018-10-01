@@ -99,6 +99,10 @@
         margin-right: $standard-margin / 2; 
         margin-bottom: 0; 
 
+        h2 { 
+            font-size: 1.2em; 
+        }
+
         &:last-child { 
             margin-right: 0; 
         }

@@ -11,4 +11,12 @@
             align-items: center;  
         }
     }
+
+    @media (max-width: $small-devices) {
+        main .container { 
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;  
+        }
+    }
 }
